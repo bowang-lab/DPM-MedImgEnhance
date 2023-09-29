@@ -1,0 +1,36 @@
+data:
+    dataset: "LowDoseCT"
+    image_size: 256
+    channels: 3
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: false
+    rescaled: true
+    num_workers: 16
+    subset_1k: false
+    out_of_dist: Yes
+
+model:
+    type: "openai"
+    image_size: 256
+    num_channels: 64
+    num_heads: 1
+    num_res_blocks: 3
+    use_fp16: False
+    var_type: 'fixedsmall'
+    class_cond: false
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+
+sampling:
+    batch_size: 1
+    
+time_travel:
+    T_sampling: 100
+    travel_length: 1
+    travel_repeat: 1
