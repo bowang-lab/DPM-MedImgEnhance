@@ -61,39 +61,26 @@ python MR_main.py
 
 ## Acknowledgment
 
-The present algorithm inherits the denoising operator from DDPM and the projection operator from IDBP. Notably, the final algorithm is equivalent to [DDNM](https://wyhuai.github.io/ddnm.io/), but it is derived from different perspectives. Since the implementation is adapted from [guided-diffusion](https://github.com/openai/guided-diffusion) and [DDNM](https://github.com/wyhuai/DDNM), please also cite them if you find this work is useful.
+We thank the [IDDPM](https://github.com/openai/improved-diffusion), [guided-diffusion](https://github.com/openai/guided-diffusion), and [DDNM](https://github.com/wyhuai/DDNM) as their implementation served as the basis for our work. We highly appreciate Jiwen Yu, who provided invaluable guidance and support. We also thank the organizers of AAPM Low Dose CT Grand Challenge, ACDC, MMs, and CMRxMothion for making the datasets publicly available.
 
 ```
-@inproceedings{DPM-MedImgEnhance,
-  title={Pre-trained Diffusion Models for Plug-and-Play Medical Image Enhancement},
-  author={Ma, Jun and Zhu, Yuanzhi and You, Chenyu and Wang, Bo},
-  booktitle={International Conference Medical Image Computing and Computer Assisted Intervention},
-  pages={1--10},
-  year={2023},
-  organization={Springer}
-}
-```
-
-- guided-diffusion
-
-```
-@inproceedings{guided-diffusion,
-  title={Diffusion models beat gans on image synthesis},
-  author={Dhariwal, Prafulla and Nichol, Alexander},
-  journal={Advances in neural information processing systems},
-  volume={34},
-  pages={8780--8794},
-  year={2021}
-}
-```
-
-- DDNM
-
-```
-@inproceedings{DDNM,
-  title={Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model},
-  author={Wang, Yinhuai and Yu, Jiwen and Zhang, Jian},
-  journal={The Eleventh International Conference on Learning Representations},
-  year={2023}
+@InProceedings{DPM-MedImgEnhance,
+	author="Ma, Jun
+	and Zhu, Yuanzhi
+	and You, Chenyu
+	and Wang, Bo",
+	editor="Greenspan, Hayit
+	and Madabhushi, Anant
+	and Mousavi, Parvin
+	and Salcudean, Septimiu
+	and Duncan, James
+	and Syeda-Mahmood, Tanveer
+	and Taylor, Russell",
+	title="Pre-trained Diffusion Models for Plug-and-Play Medical Image Enhancement",
+	booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2023",
+	year="2023",
+	publisher="Springer Nature Switzerland",
+	address="Cham",
+	pages="3--13",
 }
 ```
